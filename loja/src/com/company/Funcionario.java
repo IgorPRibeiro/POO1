@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Date;
-
 public class Funcionario {
     public String nome;
     public String id;
@@ -21,31 +19,27 @@ public class Funcionario {
         return salario;
     }
 
-    public void  setNome(String nome) {
-       this.nome = nome;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public void  setId(String id){
+    public void setId(String id) {
         this.id = id;
     }
 
-    public void setSalario(float salario){
+    public void setSalario(float salario) {
         this.salario = salario;
-    }
-
-    public void cadastrarCliente(String nome,String tel,String cpf){
-        pedido.setNomeCliente(nome);
-        pedido.setCpfCliente(cpf);
-        pedido.setTelefoneCliente(tel);
     }
 
     public void cadastrarProduto(String produto) {
         loja.setProduto(produto);
     }
 
-    public void cadastrarPedido(String pedido, String data_emissao) {
-        this.pedido.setPedido(pedido);
-        this.pedido.setDataEmissao(data_emissao);
+    public void setLoja(Loja loja) {
+        this.loja = loja;
     }
 
+    public void setPedido(Pedido pedido) {
+        this.pedido = pedido;
+    }
 }

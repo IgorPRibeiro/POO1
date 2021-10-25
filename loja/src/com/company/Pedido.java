@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Date;
-
 public class Pedido {
 
     public String pedido;
@@ -50,6 +48,14 @@ public class Pedido {
         this.dataEmissao = dataEmissao;
     }
 
+    public void cadastrarPedido(String pedido, String data_emissao) {
+        setPedido(pedido);
+        setDataEmissao(data_emissao);
+    }
 
-
+    public void cadastrarCliente(String nome, String tel, String cpf) {
+        setNomeCliente(nome);
+        setCpfCliente(cpf);
+        setTelefoneCliente(tel);
+    }
 }
